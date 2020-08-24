@@ -1,6 +1,6 @@
 const Router = require('koa-router');
-const article = require('./controller/article');
+const save = require('./service/save');
 
 const router = new Router({ prefix: '/api' });
-article(router);
+save(router);
 module.exports = router;
